@@ -133,7 +133,7 @@ namespace pxsim {
         private id: number;
         public isActive = false;
         public sampleRange = 2;
-        public flags: AccelerometerFlag = 0;
+        public flags: AccelerometerFlag = <AccelerometerFlag>0;
 
         constructor(public runtime: Runtime) {
             this.id = DAL.MICROBIT_ID_ACCELEROMETER;
